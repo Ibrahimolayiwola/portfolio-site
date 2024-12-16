@@ -1,0 +1,178 @@
+.header {
+    color: rgb(230, 224, 235);
+    background:  rgb(17, 6, 24);
+    font-family: Manrope;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.header > .wrapper {
+    max-width: 72rem;
+    padding: 0 16px;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapper > .logo > span {
+    font-size: larger;
+}
+
+ .text2{
+    background-image: linear-gradient(45deg, rgb(36, 9, 157), rgb(238, 5, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-family: 'Ranga';
+}
+
+.nav > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+}
+.button > button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: hsla(0, 0%, 100%, 0.814);;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-image: linear-gradient(65deg, rgb(36, 9, 157), rgb(196, 9, 196) 50%);
+    font-size: small;
+    font-family: 'inter';
+    transition: all .9s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 4px;
+}
+
+a:hover {
+    border-bottom: .5px solid currentColor;
+}
+
+
+.hamburger_menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: none;
+    height: var(--hamburger-height);
+    width: var(--bar-width);
+    /* padding: 16px 16px; */
+    background-color: inherit;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger_menu {
+        display: flex;
+    }
+}
+
+.hamburger_menu > span {
+    height: var(--bar-height);
+    width: var(--bar-width);
+    display: block;
+    background-image: var(--background-image);
+    position: relative;
+    margin-bottom: var(--hamburger-gap);
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+    transform-origin: left center;
+}
+
+.hamburger_menu > span::before {
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-image: var(--background-image);
+    position: absolute;
+    top: -6px;
+    margin-bottom: var(--hamburger-gap);
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+    transform-origin: left center;
+}
+
+.hamburger_menu > span::after {
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-image: var(--background-image);
+    position: absolute;
+    top: 6px;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+    transform-origin: left center;
+    /* margin-bottom: 4px; */
+}
+
+:root {
+    --bar-width: 25px;
+    --bar-height: 3px;
+    --hamburger-gap: 4px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --background-image: linear-gradient(45deg, rgb(36, 9, 157), rgb(238, 5, 238));
+}
+
+.toggle_menu > span {
+    /* opacity: 0; */
+    width: 0;
+    
+}
+
+.toggle_menu > span::before {
+    width: var(--x-width);
+    transform: rotate(45deg) translateY(-4px);
+}
+
+.toggle_menu > span::after {
+    transform: rotate(-45deg) translateY(4px);
+    width: var(--x-width);
+    /* transform: translateY(4px); */
+    /* translate: 0 calc(var(--bar-height) / 2); */
+}
+
+.mobile_nav {
+    transform: translateX(-100%);
+    position: absolute;
+    width: 100%;
+    background-color: inherit;
+    height: 100vh;
+    font-size: xx-large;
+    transition: transform var(--animation-timing);
+}
+
+.mobile_nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.open_nav  {
+    transform: translate(0);
+}

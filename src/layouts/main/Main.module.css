@@ -1,9 +1,9 @@
 main > .about_wrapper > span {
-    background-image: linear-gradient(45deg, rgb(36, 9, 157), rgb(238, 5, 238));
+    background-image: var(--bi-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-family: "Satisfy", cursive;
+    font-family: var(--ff-satisfy);
     font-weight: 700;
     font-size: large;
     font-style: normal;
@@ -11,7 +11,7 @@ main > .about_wrapper > span {
 }
 
 main{
-    margin-top: 120px;
+    margin-top: 3.5rem;
 }
 
 .about_container {
@@ -32,51 +32,46 @@ main{
   max-width: 35rem;
 }
 .about_wrapper > h1 {
-    color: white;
     font-weight: 800;
-    font-size: clamp(2.5rem, 5.7vw, 3.5rem);
-    font-family: 'Inter';
+    font-size: var(--fs-large);
 }
 .about_wrapper > h2 {
     text-transform: capitalize;
-    color: hsla(0, 0%, 100%, 0.814);
-    font-size: 1.5rem;
     margin-top: 12px;
     margin-bottom: 10px;
-    font-family: 'Inter';
 
 }
 .about_wrapper > p {
-    color: hsla(0, 0%, 100%, 0.814);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.44;
 }
 .about_wrapper .btn {
+    all: unset;
     margin-top: 50px;
-    appearance: none;
-    border: none;
-    outline: none;
-    color: hsla(0, 0%, 100%, 0.814);;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 3px;
-    background-image: linear-gradient(65deg, rgb(36, 9, 157), rgb(196, 9, 196) 50%);
-    font-size: small;
-    font-family: 'Inter';
+    background-image: var(--bi-gradient);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.about_wrapper .btn > a {
+    all: unset;
 }
 .image_wrapper > img {
-    width: clamp(16rem, 32vw, 22rem);
+    width: clamp(18rem, 32vw, 24rem);
 }
 
 .icon_wrapper{
-    color: rgb(232, 222, 222);
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     margin-top: 40px;
 }
 
 .icon_wrapper  .icon {
-    font-size: larger;
+    font-size: 1.5rem;
     background-color: rgba(27, 22, 22, 0);
     border-radius: 100%;
     margin-right: 6px;
@@ -84,9 +79,9 @@ main{
     cursor: pointer;
 }
 .icon_wrapper > span {
-    font-size: medium;
+    font-size: 1.2rem;
+    line-height: 1.44rem;
     padding-bottom: 6px;
-    font-family: 'Inter';
 }
 
 .dummy {

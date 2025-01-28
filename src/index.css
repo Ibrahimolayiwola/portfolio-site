@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
 
 * {
   padding: 0 0;
@@ -7,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: var(--ff-syne), 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,5 +16,19 @@ body {
   width: 100%;
   height: 100vh;
   background:  rgb(17, 6, 24);
+  color: var(--tc-white);
 
+}
+
+:root {
+  --ff-syne: 'Syne', sans-serif;
+  --ff-satisfy: 'Satisfy', cursive;
+  --tc-white: rgba(255, 255, 255, 0.8);
+  --cc-magenta: rgba(63, 7, 63);
+  --fs-large: clamp(2.5rem, 5.7vw, 3.5rem);
+  --bi-gradient: linear-gradient(
+    65deg,
+    rgb(36, 9, 157),
+    rgb(196, 9, 196) 50%
+  );
 }

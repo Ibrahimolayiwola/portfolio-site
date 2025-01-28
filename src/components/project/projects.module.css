@@ -1,0 +1,98 @@
+
+.container {
+    margin-top: 7.5rem;
+}
+.txt_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 35rem;
+    text-align: center;
+    padding: 0 1.75rem;
+}
+
+.txt_wrapper > span {
+    background-image: var(--bi-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: var(--ff-satisfy);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.txt_wrapper > h1 {
+    font-size: var(--fs-large);
+    font-weight: 800;
+}
+
+.txt_wrapper > p {
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+}
+
+.img  {
+    width: clamp(19.5rem, 47.5vw, 21rem);
+    height: 11rem;
+}
+
+.card_container {
+    margin: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: rgb(17, 6, 24);
+    width:  clamp(19.5rem, 47.5vw, 21rem);
+    height: 30rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--cc-magenta);
+    border: 1px solid var(--cc-magenta);
+    transition: all 1s ease;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.card_text {
+    padding: 20px;
+    font-size: 0.9rem;
+
+}
+
+
+.card_text > * {
+    margin-bottom: 20px;
+}
+
+.card_text > span {
+    background-image: var(--bi-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.tool_wrapper{
+    font-size: x-small;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tool_wrapper > span {
+    padding: 8px 8px;
+    background-image: var(--bi-gradient);
+    border-radius: 10px;
+    margin-bottom: 10px
+}

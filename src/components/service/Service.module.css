@@ -5,18 +5,18 @@
 
 
 .txt_wrapper > span {
-    background-image: linear-gradient(45deg, rgb(36, 9, 157), rgb(238, 5, 238));
+    background-image: var(--bi-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-family: "Satisfy", cursive;
+    font-family: var(--ff-satisfy);
     font-weight: 700;
-    font-size: large;
+    font-size: 1.5rem;
     font-style: normal;
 }
 
 .txt_wrapper {
-    color: white;
+    color: var(--tc-white);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -27,21 +27,23 @@
 }
 
 .txt_wrapper > p {
-    /* text-align: center; */
-    font-size: 1rem;
-    color: hsla(0, 0%, 100%, 0.814);;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.44rem;
 }
 
 .txt_wrapper > h1 {
-    font-family: 'Inter';
-    font-size: clamp(2.5rem, 5.7vw, 3.5rem);
+    font-family: var(--ff-syne);
+    font-size: var(--fs-large);
     font-weight: 800;
+    text-align: center;
 }
 
 .service_container {
     max-width: 72rem;
-    color: white;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-around;
     align-items:  center;
     text-align: center;
@@ -49,17 +51,17 @@
     padding: 0 20px;
     }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .service_container {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
     }
-}
+} */
 
 .icon {
     font-size: xx-large;
-    background-image: linear-gradient(45deg, rgb(36, 9, 157) , rgb(238, 5, 238) 50%);
+    background-image: var(--bi-gradient);
     -webkit-background-clip: text !important;
     background-clip: text;
     color: transparent;
@@ -70,13 +72,15 @@
     height: 260px;
     background-color: rgb(17, 6, 24);
     padding: 20px;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px var(--cc-magenta);
+    border: 1px solid  var(--cc-magenta);
     transition: all 1s ease;
+    border-radius: 10px;
     
 }
 
 .service:hover {
-    box-shadow: 0 1.8px  rgb(63, 7, 63)
+    box-shadow: 0 1.8px   var(--cc-magenta);
 }
 
 .svg_icon {
@@ -88,15 +92,15 @@
 
 .service > h2 {
     font-size: large;
-    color: hsla(0, 0%, 100%, 0.814);
+    color: var(--tc-white);
     margin-top: 30px;
-    font-family: 'Inter';
+    font-family: var(--ff-syne);
 
 }
 
 .service > p {
     font-size: smaller;
     margin-top: 15px;
-    color: hsla(0, 0%, 100%, 0.814);
+    color: var(--tc-white);
     line-height: 18px;
 }

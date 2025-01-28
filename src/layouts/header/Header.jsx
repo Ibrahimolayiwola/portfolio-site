@@ -20,7 +20,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className={Style.button}>
-          <button>Contact Me</button>
+          <a href='mailto:highbeecodes001@gmail.com'>Contact Me</a>
         </div>
         {/*  toggle button  */}
          <div className={`${Style.hamburger_menu} ${toggleMenu ? Style.toggle_menu : ''}`} onClick={() => setToggleMenu(!toggleMenu)}>  <span ></span></div>  

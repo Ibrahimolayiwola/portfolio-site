@@ -1,6 +1,7 @@
 .svg_icon {
     width: auto;
     height: auto;
+    color: transparent;
     display: inline;
-    font-size: 50px;
+    font-size: 3rem;
 }

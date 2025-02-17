@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./projects.module.css";
 import thumbnail_1 from "../../assets/thumbnail_1.png";
-import thumbnail_2 from "../../assets/jhi-thumbnail.png";
+import thumbnail_2 from "../../assets/gnest-thumbnail.png";
 import thumbnail_3 from "../../assets/gnest-thumbnail.png";
 import { motion } from "framer-motion";
 import {

@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Quaterz",
       description:
-        "A real-estate platform designed to help users buy, rent, and sell their dream homes and properties with ease. This platform features a user-friendly sign-in page, allowing users to quickly and securely access their accounts. Property owners can effortlessly upload their listings for rent or sale, reaching a wide audience. Discover your next home with Quaterz.",
+        "A real-estate platform designed to help users buy, rent, and sell their dream homes and properties easily. This platform features a user-friendly sign-in page, allowing users to quickly and securely access their accounts. Property owners can effortlessly upload their listings for rent or sale, reaching a wide audience. Discover your next home with Quaterz.",
       thumbnail: thumbnail_1,
       tools: ["ReactJS", "TailwindCSS", "Firebase"],
       url: "https://quarterz.vercel.app/",

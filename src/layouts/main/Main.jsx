@@ -1,7 +1,7 @@
 import React from "react";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
-import Style from './main.module.css';
+import Style from './Main.module.css';
 // import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import Service from "../../components/service/Service";

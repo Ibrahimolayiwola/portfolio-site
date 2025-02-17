@@ -1,10 +1,9 @@
 import React from "react";
-import Style from "./main.module.css";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
+import Style from "./main.module.css";
 // import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import Rating from "../../components/rating/Rating";
 import Service from "../../components/service/Service";
 import MySkills from "../../components/skills/Skills";
 import profilePic from "../../assets/myProfilePic1.png";

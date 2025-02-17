@@ -35,7 +35,7 @@
 .txt_wrapper > h1 {
     font-family: var(--ff-syne);
     font-size: var(--fs-large);
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -50,14 +50,6 @@
     margin-top: 80px;
     padding: 0 20px;
     }
-
-/* @media (max-width: 768px) {
-    .service_container {
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-    }
-} */
 
 .icon {
     font-size: xx-large;

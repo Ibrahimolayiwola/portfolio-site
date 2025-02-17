@@ -9,7 +9,7 @@
 }
 
 .experience > p:nth-child(2) {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
@@ -34,7 +34,7 @@
 
 .experience_container > h1 {
   font-size: var(--fs-large);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.75rem;
 }
 

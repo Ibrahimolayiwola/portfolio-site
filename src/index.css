@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+@import '@fontsource/syne/400.css';
+@import '@fontsource/syne/700.css';
 
 * {
   padding: 0 0;

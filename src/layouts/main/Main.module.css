@@ -15,24 +15,26 @@ main{
 }
 
 .about_container {
+    margin: 7.5rem auto 0 auto;
+    max-width: 70rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2.5rem;
 }
 
 @media (max-width: 768px) {
     .about_container {
         flex-direction: column-reverse;
-        gap: 16px;
-        justify-content: center;
+        align-items: center;
+
     }
 }
 .about_wrapper {
-  margin: 60px 60px;
-  max-width: 35rem;
+  width: clamp(19rem, 65vw, 35rem);
 }
 .about_wrapper > h1 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: var(--fs-large);
 }
 .about_wrapper > h2 {
@@ -53,7 +55,7 @@ main{
     border-radius: 3px;
     background-image: var(--bi-gradient);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .about_wrapper .btn > a {

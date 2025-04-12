@@ -72,11 +72,14 @@ const Projects = () => {
         <div className={Style.card_container}>
           {projects.map(({ title, description, thumbnail, tools, url }, i) => (
             <div className={Style.card} key={i}>
-              <div
+              <motion.div
+               initial={{scale: 1}}
+               whileHover={{scale: 1.2}}
+               transition={{duration: .2, ease: 'easeOut'}}
                 className={Style.img_wrapper}
               >
                   <img className={Style.img} src={thumbnail} alt="thumbnail" />
-              </div>
+              </motion.div>
               <a href={url} target="_blank" rel="noopener noreferrer">
                 <div
                   className={Style.card_text}

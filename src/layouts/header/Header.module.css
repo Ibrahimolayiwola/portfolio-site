@@ -12,8 +12,8 @@
 }
 
 .header > .wrapper {
-    max-width: 72rem;
-    padding: 0 16px;
+    max-width: 80rem;
+    padding: 0 1.5rem;
     height: 4rem;
     margin: 0 auto;
     display: flex;
@@ -158,7 +158,7 @@ a {
     transform: translateX(-100%);
     position: absolute;
     width: 100%;
-    background-color: inherit;
+    background-color: blue;
     height: 100vh;
     font-size: xx-large;
     transition: transform var(--animation-timing);

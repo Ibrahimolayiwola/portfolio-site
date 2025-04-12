@@ -73,7 +73,7 @@ const Main = () => {
         initial='initial'
         animate='animate'
         className={Style.image_wrapper}>
-          <img src={profilePic} alt="profile pic" />
+          <img src={profilePic} alt="profile pic" width={450} height={450} className="w-full h-full object-cover"/>
         </motion.div>
       </div>
       {/* <Rating /> */}

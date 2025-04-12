@@ -22,9 +22,10 @@ const Header = () => {
         <div className={Style.button}>
           <a href='mailto:highbeecodes001@gmail.com'>Contact Me</a>
         </div>
-        {/*  toggle button  */}
+        {/*  mobile button  */}
          <div className={`${Style.hamburger_menu} ${toggleMenu ? Style.toggle_menu : ''}`} onClick={() => setToggleMenu(!toggleMenu)}>  <span ></span></div>  
       </div>
+      {/* mobile nav  */}
       <div className={`${Style.mobile_nav} ${toggleMenu ? Style.open_nav : ''}`}>
         <ul onClick={() => setToggleMenu(!toggleMenu)}>
           <li><a href='#home'>Home</a></li>
